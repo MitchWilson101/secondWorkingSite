@@ -1,0 +1,43 @@
+
+        
+        body{
+            background: url('maur1.jpg') no-repeat center center/cover;
+            height: 100%;
+            
+        }
+        .container{
+            opacity: 0.9;
+            height: 100%;
+            /* background: black !important; */
+            
+        }
+        .container img {
+            max-height: 50%;
+            max-width: 80%;
+           opacity: 1;
+           border-radius: 10px;
+           border-bottom: 1rem;
+        }
+        #imgSpan{
+            color: #fff;
+            background: #444;
+            padding: 0.1rem;
+            
+            
+        }
+        h1{
+            text-shadow: 0.2rem 0.2rem 0.75rem black;
+        }
+        
+        @media(max-width: 500px){
+            img{
+                max-width: 80%;
+                max-height: 50%;
+                
+            }
+            body{
+                height: 250vh;
+            }
+        }
+
+      

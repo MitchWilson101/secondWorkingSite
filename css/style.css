@@ -1,0 +1,149 @@
+:root{
+    --primary-color: rgba(13, 110, 139, 0.2);
+    --secondary-color: rgba(229,148, 0, 0.9);
+    --overlay-color:rgba(24, 39 , 51, 0.9);
+    --menu-speed: 0.75s;
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+.p-1{padding: 1.5rem ;}
+.p-2{padding: 2rem ;}
+.p-3{padding: 3rem ;}
+.text-primary {
+    color: rgb(5, 128, 52);
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+} 
+
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+#showcase {
+    background: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+#showcase:before{
+    content: '';
+    background: url('../img/maur1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.75rem black;
+    height: 100%;
+}
+
+#showcase h1 {
+    font-size: 4rem;
+}
+
+#showcase p {
+    font-size: 1.3rem;
+}
+
+.btn{
+    display: inline-block;
+    border: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* Section: contact */
+#contact{
+    display: flex;
+    background-color:rgb(39, 71, 54);
+    
+}
+
+#contact .map , #contact .contact-form {
+    flex: 1;
+}
+#conact .contact-form .form-group{
+    margin: 075rem;
+}
+#contact  .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5;
+}
+.btn-dark {
+    background: #333;
+    color: #fff;
+  }
+ #contact .contact-form{
+    padding: 1rem;
+    color: white;
+    
+ }
+ .bg-dark {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+#success{
+    background-color: rgb(5, 128, 52);
+}
+/* Smartphones*/
+@media(max-width: 500px){
+
+    #contact {
+        flex-direction: column;
+    }
+    #contact .map {
+      height: 200px;
+      border-top: 4px solid #333;
+    }
+}
